@@ -1,9 +1,12 @@
-import reactLogo from "./assets/react.svg";
+import { useState } from "react";
+
 import viteLogo from "/vite.svg";
+
+import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { COLORS } from "@/constants";
 
 function App() {
+  const [a, setA] = useState(0);
   return (
     <>
       <div>

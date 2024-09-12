@@ -19,7 +19,14 @@ export default tseslint.config(
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
       react,
-      pluginForImportRule,
+      import: pluginForImportRule,
+    },
+    settings: {
+      "import/resolver": {
+        typescript: {
+          directory: "./src",
+        },
+      },
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -31,6 +38,43 @@ export default tseslint.config(
       "react/no-unused-state": "error",
       "react/react-in-jsx-scope": "off",
       "react/jsx-no-target-blank": "off",
+      "import/order": [
+        "error",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "type",
+            "parent",
+            "sibling",
+            "index",
+          ],
+          "newlines-between": "always",
+          pathGroups: [
+            {
+              pattern: "react*",
+              group: "external",
+              position: "before",
+            },
+            {
+              pattern: "@hooks/*",
+              group: "internal",
+              position: "before",
+            },
+            {
+              pattern: "@pages/*",
+              group: "internal",
+              position: "before",
+            },
+            {
+              pattern: "@components/*",
+              group: "internal",
+              position: "before",
+            },
+          ],
+        },
+      ],
     },
   }
 );
