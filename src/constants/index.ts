@@ -1,7 +1,7 @@
 /*
     스타일 관련 객체
 */
-export const colors = {
+export const COLORS = {
   black: "#000",
   white: "#fff",
   grayscale50: "#FCFCFD",
