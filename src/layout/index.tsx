@@ -1,11 +1,18 @@
 import { css } from "@emotion/react";
+import { ReactNode } from "react";
 
-const Layout = () => {
-  return <div css={layoutCss.container}></div>;
+type Props = {
+  children: ReactNode;
+};
+
+const Layout = ({ children }: Props) => {
+  return <div css={layoutCss.container}>{children}</div>;
 };
 
 const layoutCss = {
-  container: css({ backgroundColor: "dodgerblue" }),
+  container: css`
+    background-color: red;
+  `,
 };
 
 export default Layout;
