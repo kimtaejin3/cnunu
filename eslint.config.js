@@ -35,6 +35,7 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
+      "react/no-unknown-property": ["error", { ignore: ["css"] }],
       "react/no-unused-state": "error",
       "react/react-in-jsx-scope": "off",
       "react/jsx-no-target-blank": "off",
