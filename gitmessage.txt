@@ -7,5 +7,6 @@ style: 로직과는 상관없는 자잘한 코드수정시
 design: css와 같은 스타일링시
 rename: 폴더 및 파일 이름 변경시
 move: 파일 및 폴더 경로 변경시
+delete: 파일 삭제
 typings: 타입 추가시
 build: 빌드 시스템 변화 및 외부 라이브러리 추가시
