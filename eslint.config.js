@@ -42,8 +42,8 @@ export default tseslint.config(
         "error",
         {
           groups: [
-            "builtin",
             "external",
+            "builtin",
             "internal",
             "parent",
             "sibling",
@@ -61,7 +61,6 @@ export default tseslint.config(
               position: "before",
             },
           ],
-          // pathGroupsExcludedImportTypes: ["builtin"],
         },
       ],
     },
