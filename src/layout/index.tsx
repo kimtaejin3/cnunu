@@ -11,7 +11,9 @@ const Layout = ({ children }: Props) => {
 
 const layoutCss = {
   container: css`
-    background-color: red;
+    max-width: 37.5rem;
+    background: red;
+    margin: 0 auto;
   `,
 };
 
