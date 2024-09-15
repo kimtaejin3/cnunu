@@ -6,6 +6,10 @@ const baseStyle = css`
     padding: 0;
   }
 
+  html {
+    font-size: 62.5%;
+  }
+
   li {
     list-style-type: none;
   }
