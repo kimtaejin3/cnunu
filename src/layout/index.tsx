@@ -14,6 +14,7 @@ const layoutCss = {
     max-width: 37.5rem;
     background: red;
     margin: 0 auto;
+    height: 100vh;
   `,
 };
 
