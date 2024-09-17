@@ -12,7 +12,6 @@ const Layout = ({ children }: Props) => {
 const layoutCss = {
   container: css`
     max-width: 37.5rem;
-    background: red;
     margin: 0 auto;
     height: 100vh;
   `,
