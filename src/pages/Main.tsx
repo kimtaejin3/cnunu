@@ -13,16 +13,17 @@ const Main = () => {
         </header>
         <div css={MainCss.contents}>
           <main css={MainCss.main}>
-            <div>
+            <div css={MainCss.left}>
               <div css={MainCss.one}>1</div>
               <div css={MainCss.two}>2</div>
               <div css={MainCss.three}>3</div>
               <div css={MainCss.four}>4</div>
+            </div>
+            <div css={MainCss.right}>
               <div css={MainCss.five}>5</div>
               <div css={MainCss.six}>6</div>
               <div css={MainCss.seven}>7</div>
             </div>
-            <div></div>
           </main>
           <footer css={MainCss.footer}>
             팀 소개 링크 / 제안: 1234@gmail.com
@@ -44,6 +45,9 @@ const MainCss = {
     box-shadow: 0px 2px 4px 0px #00000026;
     background-color: ${COLORS.white};
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   `,
   title: css`
     color: ${COLORS.grayscale900};
@@ -56,44 +60,65 @@ const MainCss = {
   `,
   contents: css`
     flex-grow: 30;
+    display: flex;
+    flex-direction: column;
   `,
   main: css`
-    padding: 1.5rem;
+    flex-grow: 13;
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    gap: 1.5rem;
+  `,
+  left: css`
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  `,
+  right: css`
+    flex-grow: 1;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
   `,
   one: css`
-    grid-area: one;
+    flex-grow: 2.3;
     background-color: dodgerblue;
   `,
   two: css`
-    grid-area: two;
+    flex-grow: 0.7;
     background-color: dodgerblue;
   `,
   three: css`
-    grid-area: three;
+    flex-grow: 2.3;
     background-color: dodgerblue;
   `,
   four: css`
-    grid-area: four;
+    flex-grow: 1.3;
     background-color: dodgerblue;
   `,
   five: css`
-    grid-area: five;
+    flex-grow: 4;
     background-color: dodgerblue;
   `,
   six: css`
-    grid-area: six;
+    flex-grow: 1.5;
     background-color: dodgerblue;
   `,
   seven: css`
-    grid-area: seven;
+    flex-grow: 1.5;
     background-color: dodgerblue;
   `,
 
   footer: css`
+    flex-grow: 2;
     text-align: center;
-    margin-top: 2rem;
     color: ${COLORS.grayscale800};
     font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5rem;
   `,
 };
 
