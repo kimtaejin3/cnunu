@@ -5,7 +5,7 @@ import { COLORS } from "@/constants";
 
 type Props = {
   children: ReactNode;
-  sx: CSSProperties;
+  sx?: CSSProperties;
 };
 
 const Body = ({ children, sx }: Props) => {
