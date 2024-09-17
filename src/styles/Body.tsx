@@ -1,14 +1,19 @@
 import { css } from "@emotion/react";
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 
 import { COLORS } from "@/constants";
 
 type Props = {
   children: ReactNode;
+  sx: CSSProperties;
 };
 
-const Body = ({ children }: Props) => {
-  return <div css={BodyCss.container}>{children}</div>;
+const Body = ({ children, sx }: Props) => {
+  return (
+    <div style={sx} css={BodyCss.container}>
+      {children}
+    </div>
+  );
 };
 
 const BodyCss = {
