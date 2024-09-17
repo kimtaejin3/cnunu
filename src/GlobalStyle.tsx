@@ -1,5 +1,7 @@
 import { Global, css } from "@emotion/react";
 
+import { COLORS } from "./constants";
+
 const baseStyle = css`
   * {
     margin: 0;
@@ -8,6 +10,10 @@ const baseStyle = css`
 
   html {
     font-size: 62.5%;
+  }
+
+  body {
+    background-color: ${COLORS.bg};
   }
 
   li {
