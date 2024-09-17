@@ -13,13 +13,13 @@ const Main = () => {
         </header>
         <div css={MainCss.contents}>
           <main css={MainCss.main}>
-            <div css={MainCss.left}>
+            <div css={MainCss.leftSection}>
               <div css={MainCss.one}>1</div>
               <div css={MainCss.two}>2</div>
               <div css={MainCss.three}>3</div>
               <div css={MainCss.four}>4</div>
             </div>
-            <div css={MainCss.right}>
+            <div css={MainCss.rightSection}>
               <div css={MainCss.five}>5</div>
               <div css={MainCss.six}>6</div>
               <div css={MainCss.seven}>7</div>
@@ -69,13 +69,13 @@ const MainCss = {
     display: flex;
     gap: 1.5rem;
   `,
-  left: css`
+  leftSection: css`
     flex-grow: 1;
     display: flex;
     gap: 2rem;
     flex-direction: column;
   `,
-  right: css`
+  rightSection: css`
     flex-grow: 1;
     display: flex;
     gap: 2rem;
