@@ -57,6 +57,16 @@ const Main = () => {
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
+              <p
+                css={css`
+                  color: ${COLORS.grayscale800};
+                  font-size: 1.4rem;
+                  margin-top: 1rem;
+                  font-weight: 400;
+                `}
+              >
+                내 주머니 사정에 딱 맞는 학교 주변 식당/카페
+              </p>
             </Link>
             <Link to="/" css={MainCss.card_four}>
               <CardHeader
