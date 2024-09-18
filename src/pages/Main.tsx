@@ -1,36 +1,33 @@
 import { css } from "@emotion/react";
 
 import { COLORS } from "@/constants";
-import Body from "@/styles/Body";
 
 const Main = () => {
   return (
-    <Body sx={{ height: "100%" }}>
-      <div css={MainCss.container}>
-        <header css={MainCss.header}>
-          <h1 css={MainCss.title}>CNU:NU</h1>
-          <div css={MainCss.subTitle}>충대 정보 싹 다 모았다</div>
-        </header>
-        <div css={MainCss.contents}>
-          <main css={MainCss.main}>
-            <div css={MainCss.leftSection}>
-              <div css={MainCss.card_one}>1</div>
-              <div css={MainCss.card_two}>2</div>
-              <div css={MainCss.card_three}>3</div>
-              <div css={MainCss.card_four}>4</div>
-            </div>
-            <div css={MainCss.rightSection}>
-              <div css={MainCss.card_five}>5</div>
-              <div css={MainCss.card_six}>6</div>
-              <div css={MainCss.card_seven}>7</div>
-            </div>
-          </main>
-          <footer css={MainCss.footer}>
-            팀 소개 링크 / 제안: 1234@gmail.com
-          </footer>
-        </div>
+    <div css={MainCss.container}>
+      <header css={MainCss.header}>
+        <h1 css={MainCss.title}>CNU:NU</h1>
+        <div css={MainCss.subTitle}>충대 정보 싹 다 모았다</div>
+      </header>
+      <div css={MainCss.contents}>
+        <main css={MainCss.main}>
+          <div css={MainCss.leftSection}>
+            <div css={MainCss.card_one}>1</div>
+            <div css={MainCss.card_two}>2</div>
+            <div css={MainCss.card_three}>3</div>
+            <div css={MainCss.card_four}>4</div>
+          </div>
+          <div css={MainCss.rightSection}>
+            <div css={MainCss.card_five}>5</div>
+            <div css={MainCss.card_six}>6</div>
+            <div css={MainCss.card_seven}>7</div>
+          </div>
+        </main>
+        <footer css={MainCss.footer}>
+          팀 소개 링크 / 제안: 1234@gmail.com
+        </footer>
       </div>
-    </Body>
+    </div>
   );
 };
 
