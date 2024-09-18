@@ -12,15 +12,15 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <div css={MainCss.card_one}>1</div>
-            <div css={MainCss.card_two}>2</div>
-            <div css={MainCss.card_three}>3</div>
-            <div css={MainCss.card_four}>4</div>
+            <div css={MainCss.card_layout_one}>1</div>
+            <div css={MainCss.card_layout_two}>2</div>
+            <div css={MainCss.card_layout_three}>3</div>
+            <div css={MainCss.card_layout_four}>4</div>
           </div>
           <div css={MainCss.rightSection}>
-            <div css={MainCss.card_five}>5</div>
-            <div css={MainCss.card_six}>6</div>
-            <div css={MainCss.card_seven}>7</div>
+            <div css={MainCss.card_layout_five}>5</div>
+            <div css={MainCss.card_layout_six}>6</div>
+            <div css={MainCss.card_layout_seven}>7</div>
           </div>
         </main>
         <footer css={MainCss.footer}>
@@ -30,6 +30,11 @@ const Main = () => {
     </div>
   );
 };
+
+const cardLayout = css`
+  box-shadow: 1px 2px 4px 0px #00000026;
+  border-radius: 0.8rem;
+`;
 
 const MainCss = {
   container: css`
@@ -78,31 +83,38 @@ const MainCss = {
     gap: 2rem;
     flex-direction: column;
   `,
-  card_one: css`
+  card_layout_one: css`
+    ${cardLayout};
     flex-grow: 2.3;
     background-color: dodgerblue;
   `,
-  card_two: css`
+  card_layout_two: css`
+    ${cardLayout};
     flex-grow: 0.7;
     background-color: dodgerblue;
   `,
-  card_three: css`
+  card_layout_three: css`
+    ${cardLayout};
     flex-grow: 2.3;
     background-color: dodgerblue;
   `,
-  card_four: css`
+  card_layout_four: css`
+    ${cardLayout};
     flex-grow: 1.3;
     background-color: dodgerblue;
   `,
-  card_five: css`
+  card_layout_five: css`
+    ${cardLayout};
     flex-grow: 4;
     background-color: dodgerblue;
   `,
-  card_six: css`
+  card_layout_six: css`
+    ${cardLayout};
     flex-grow: 1.5;
     background-color: dodgerblue;
   `,
-  card_seven: css`
+  card_layout_seven: css`
+    ${cardLayout};
     flex-grow: 1.5;
     background-color: dodgerblue;
   `,
