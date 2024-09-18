@@ -22,9 +22,9 @@ const CardHeaderCss = (titleColor?: string) => ({
     justify-content: space-between;
   `,
   title: css`
-    font-family: SUIT;
+    font-family: "SUIT-Regular";
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 2.7rem;
     letter-spacing: -0.02em;
     text-align: left;
