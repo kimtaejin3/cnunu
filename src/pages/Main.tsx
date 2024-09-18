@@ -1,5 +1,7 @@
 import { css } from "@emotion/react";
 
+import { Link } from "react-router-dom";
+
 import { COLORS } from "@/constants";
 
 const Main = () => {
@@ -12,15 +14,15 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <div css={MainCss.card_layout_one}></div>
-            <div css={MainCss.card_layout_two}></div>
-            <div css={MainCss.card_layout_three}></div>
-            <div css={MainCss.card_layout_four}></div>
+            <Link to="/" css={MainCss.card_layout_one}></Link>
+            <Link to="/" css={MainCss.card_layout_two}></Link>
+            <Link to="/" css={MainCss.card_layout_three}></Link>
+            <Link to="/" css={MainCss.card_layout_four}></Link>
           </div>
           <div css={MainCss.rightSection}>
-            <div css={MainCss.card_layout_five}></div>
-            <div css={MainCss.card_layout_six}></div>
-            <div css={MainCss.card_layout_seven}></div>
+            <Link to="/" css={MainCss.card_layout_five}></Link>
+            <Link to="/" css={MainCss.card_layout_six}></Link>
+            <Link to="/" css={MainCss.card_layout_seven}></Link>
           </div>
         </main>
         <footer css={MainCss.footer}>
