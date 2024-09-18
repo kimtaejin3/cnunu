@@ -6,7 +6,6 @@ import plusIcon_black from "@/assets/icons/plus_black.svg";
 import plusIcon_white from "@/assets/icons/plus_white.svg";
 import CardHeader from "@/components/cards/CardHeader";
 import { COLORS } from "@/constants";
-
 const Main = () => {
   return (
     <div css={MainCss.container}>
@@ -143,11 +142,11 @@ const MainCss = {
   `,
   card_two: css`
     ${card};
-    flex-grow: 0.7;
+    flex-grow: 0.2;
   `,
   card_three: css`
     ${card};
-    flex-grow: 2.3;
+    flex-grow: 2.2;
     background: ${COLORS.primary300};
   `,
   card_four: css`
