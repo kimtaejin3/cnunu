@@ -188,7 +188,6 @@ const MainCss = {
   card_two: css`
     ${card};
     flex-basis: 0;
-
     flex-grow: 0.2;
   `,
   card_three: css`
@@ -200,7 +199,6 @@ const MainCss = {
   card_four: css`
     ${card};
     flex-basis: 0;
-
     flex-grow: 1.3;
   `,
   card_five: css`
