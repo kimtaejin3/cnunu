@@ -16,7 +16,7 @@ const layoutCss = {
     max-width: 37.5rem;
     margin: 0 auto;
     background-color: ${COLORS.white};
-    height: 100vh;
+    height: 100svh;
   `,
 };
 
