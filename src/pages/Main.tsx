@@ -60,7 +60,13 @@ const Main = () => {
               <p
                 css={css`
                   color: ${COLORS.grayscale800};
+
+                  @media (max-width: 375px) {
+                    font-size: 1.2rem;
+                  }
+
                   font-size: 1.4rem;
+
                   margin-top: 1rem;
                   font-weight: 400;
                 `}
