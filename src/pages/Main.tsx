@@ -87,7 +87,7 @@ const Main = () => {
               <CardHeader title="도서관 혼잡도" />
               <div
                 css={css`
-                  margin-top: 3rem;
+                  margin-top: 2.5svh;
                 `}
               >
                 <ul css={MainCss.progressBarContainer}>
