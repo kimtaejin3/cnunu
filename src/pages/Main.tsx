@@ -12,15 +12,15 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <div css={MainCss.card_layout_one}>1</div>
-            <div css={MainCss.card_layout_two}>2</div>
-            <div css={MainCss.card_layout_three}>3</div>
-            <div css={MainCss.card_layout_four}>4</div>
+            <div css={MainCss.card_layout_one}></div>
+            <div css={MainCss.card_layout_two}></div>
+            <div css={MainCss.card_layout_three}></div>
+            <div css={MainCss.card_layout_four}></div>
           </div>
           <div css={MainCss.rightSection}>
-            <div css={MainCss.card_layout_five}>5</div>
-            <div css={MainCss.card_layout_six}>6</div>
-            <div css={MainCss.card_layout_seven}>7</div>
+            <div css={MainCss.card_layout_five}></div>
+            <div css={MainCss.card_layout_six}></div>
+            <div css={MainCss.card_layout_seven}></div>
           </div>
         </main>
         <footer css={MainCss.footer}>
@@ -87,6 +87,7 @@ const MainCss = {
   card_layout_one: css`
     ${cardLayout};
     flex-grow: 2.3;
+    background: ${COLORS.primary700};
   `,
   card_layout_two: css`
     ${cardLayout};
@@ -95,6 +96,7 @@ const MainCss = {
   card_layout_three: css`
     ${cardLayout};
     flex-grow: 2.3;
+    background: ${COLORS.primary300};
   `,
   card_layout_four: css`
     ${cardLayout};
