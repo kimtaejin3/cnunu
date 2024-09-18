@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import plusIcon_black from "@/assets/icons/plus_black.svg";
 import plusIcon_white from "@/assets/icons/plus_white.svg";
 import CardHeader from "@/components/cards/CardHeader";
+import PercentBar from "@/components/PercentBar";
 import { COLORS } from "@/constants";
+
 const Main = () => {
   return (
     <div css={MainCss.container}>
@@ -19,15 +21,32 @@ const Main = () => {
             <Link to="/" css={MainCss.card_one}>
               <CardHeader
                 title="오늘의 학식"
-                titleColor={COLORS.white}
                 iconSrc={plusIcon_white}
                 iconAlt="watch_detail_icon"
               />
+              <div css={MainCss.cardBody}>
+                <div
+                  css={css`
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    margin-bottom: 1.5rem;
+                  `}
+                >
+                  혼잡도
+                </div>
+                <ul css={MainCss.progressBarContainer}>
+                  <li>
+                    <PercentBar title="1학" progress={80} />
+                  </li>
+                  <li>
+                    <PercentBar title="2학" progress={30} />
+                  </li>
+                </ul>
+              </div>
             </Link>
             <Link to="/" css={MainCss.card_two}>
               <CardHeader
                 title="순환버스"
-                titleColor={COLORS.black}
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
@@ -35,7 +54,6 @@ const Main = () => {
             <Link to="/" css={MainCss.card_three}>
               <CardHeader
                 title="맛집 연구소"
-                titleColor={COLORS.black}
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
@@ -43,7 +61,6 @@ const Main = () => {
             <Link to="/" css={MainCss.card_four}>
               <CardHeader
                 title="인재개발원"
-                titleColor={COLORS.black}
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
@@ -51,12 +68,34 @@ const Main = () => {
           </div>
           <div css={MainCss.rightSection}>
             <Link to="/" css={MainCss.card_five}>
-              <CardHeader title="도서관 혼잡도" titleColor={COLORS.black} />
+              <CardHeader title="도서관 혼잡도" />
+              <div
+                css={css`
+                  margin-top: 3rem;
+                `}
+              >
+                <ul css={MainCss.progressBarContainer}>
+                  <li>
+                    <PercentBar title="B2층" progress={80} />
+                  </li>
+                  <li>
+                    <PercentBar title="B1층" progress={30} />
+                  </li>
+                  <li>
+                    <PercentBar title="1층" progress={30} />
+                  </li>
+                  <li>
+                    <PercentBar title="2층" progress={30} />
+                  </li>
+                  <li>
+                    <PercentBar title="3층" progress={30} />
+                  </li>
+                </ul>
+              </div>
             </Link>
             <Link to="/" css={MainCss.card_six}>
               <CardHeader
                 title="학사일정"
-                titleColor={COLORS.black}
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
@@ -64,7 +103,6 @@ const Main = () => {
             <Link to="/" css={MainCss.card_seven}>
               <CardHeader
                 title="학과알림"
-                titleColor={COLORS.black}
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
@@ -93,7 +131,9 @@ const MainCss = {
     height: 100%;
   `,
   header: css`
-    flex-grow: 1;
+    padding: 0.6rem 0;
+    flex-grow: 2.3;
+    flex-basis: 0;
     box-shadow: 0px 2px 4px 0px #00000026;
     background-color: ${COLORS.white};
     text-align: center;
@@ -108,15 +148,18 @@ const MainCss = {
   subTitle: css`
     color: ${COLORS.grayscale800};
     font-size: 1.4rem;
+    font-weight: 700;
     margin-top: 0.5rem;
   `,
   contents: css`
     flex-grow: 30;
+    flex-basis: 0;
     display: flex;
     flex-direction: column;
   `,
   main: css`
     flex-grow: 13;
+    flex-basis: 0;
     padding: 1.5rem 1.5rem 0;
     display: flex;
     gap: 1.5rem;
@@ -137,35 +180,56 @@ const MainCss = {
   `,
   card_one: css`
     ${card};
-    flex-grow: 2.3;
+    flex-basis: 0;
+    flex-grow: 2;
     background: ${COLORS.primary700};
+    color: ${COLORS.white};
   `,
   card_two: css`
     ${card};
+    flex-basis: 0;
+
     flex-grow: 0.2;
   `,
   card_three: css`
     ${card};
-    flex-grow: 2.2;
+    flex-basis: 0;
+    flex-grow: 1.4;
     background: ${COLORS.primary300};
   `,
   card_four: css`
     ${card};
+    flex-basis: 0;
+
     flex-grow: 1.3;
   `,
   card_five: css`
     ${card};
-    flex-grow: 4;
+    flex-basis: 0;
+    flex-grow: 3.8;
   `,
   card_six: css`
     ${card};
-    flex-grow: 1.5;
+    flex-basis: 0;
+    flex-grow: 1.4;
   `,
   card_seven: css`
     ${card};
-    flex-grow: 1.5;
+    flex-basis: 0;
+    flex-grow: 1.4;
+  `,
+  cardBody: css`
+    margin: 1rem 0 0;
+    border-top: 0.05rem solid ${COLORS.primary150};
+    padding-top: 1rem;
+  `,
+  progressBarContainer: css`
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   `,
   footer: css`
+    flex-basis: 0;
     flex-grow: 2;
     text-align: center;
     color: ${COLORS.grayscale800};

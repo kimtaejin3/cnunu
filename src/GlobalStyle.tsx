@@ -15,6 +15,7 @@ const baseStyle = css`
 
   body {
     background-color: ${COLORS.bg};
+    font-family: "SUIT-Regular";
   }
 
   li {
