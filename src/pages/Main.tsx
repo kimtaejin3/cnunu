@@ -14,15 +14,15 @@ const Main = () => {
         <div css={MainCss.contents}>
           <main css={MainCss.main}>
             <div css={MainCss.leftSection}>
-              <div css={MainCss.one}>1</div>
-              <div css={MainCss.two}>2</div>
-              <div css={MainCss.three}>3</div>
-              <div css={MainCss.four}>4</div>
+              <div css={MainCss.card_one}>1</div>
+              <div css={MainCss.card_two}>2</div>
+              <div css={MainCss.card_three}>3</div>
+              <div css={MainCss.card_four}>4</div>
             </div>
             <div css={MainCss.rightSection}>
-              <div css={MainCss.five}>5</div>
-              <div css={MainCss.six}>6</div>
-              <div css={MainCss.seven}>7</div>
+              <div css={MainCss.card_five}>5</div>
+              <div css={MainCss.card_six}>6</div>
+              <div css={MainCss.card_seven}>7</div>
             </div>
           </main>
           <footer css={MainCss.footer}>
@@ -81,35 +81,34 @@ const MainCss = {
     gap: 2rem;
     flex-direction: column;
   `,
-  one: css`
+  card_one: css`
     flex-grow: 2.3;
     background-color: dodgerblue;
   `,
-  two: css`
+  card_two: css`
     flex-grow: 0.7;
     background-color: dodgerblue;
   `,
-  three: css`
+  card_three: css`
     flex-grow: 2.3;
     background-color: dodgerblue;
   `,
-  four: css`
+  card_four: css`
     flex-grow: 1.3;
     background-color: dodgerblue;
   `,
-  five: css`
+  card_five: css`
     flex-grow: 4;
     background-color: dodgerblue;
   `,
-  six: css`
+  card_six: css`
     flex-grow: 1.5;
     background-color: dodgerblue;
   `,
-  seven: css`
+  card_seven: css`
     flex-grow: 1.5;
     background-color: dodgerblue;
   `,
-
   footer: css`
     flex-grow: 2;
     text-align: center;
