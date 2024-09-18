@@ -14,7 +14,9 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <Link to="/" css={MainCss.card_layout_one}></Link>
+            <Link to="/" css={MainCss.card_layout_one}>
+              <div></div>
+            </Link>
             <Link to="/" css={MainCss.card_layout_two}></Link>
             <Link to="/" css={MainCss.card_layout_three}></Link>
             <Link to="/" css={MainCss.card_layout_four}></Link>
