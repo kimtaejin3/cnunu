@@ -34,6 +34,7 @@ const Main = () => {
 const cardLayout = css`
   box-shadow: 1px 2px 4px 0px #00000026;
   border-radius: 0.8rem;
+  background-color: ${COLORS.white};
 `;
 
 const MainCss = {
@@ -86,37 +87,30 @@ const MainCss = {
   card_layout_one: css`
     ${cardLayout};
     flex-grow: 2.3;
-    background-color: dodgerblue;
   `,
   card_layout_two: css`
     ${cardLayout};
     flex-grow: 0.7;
-    background-color: dodgerblue;
   `,
   card_layout_three: css`
     ${cardLayout};
     flex-grow: 2.3;
-    background-color: dodgerblue;
   `,
   card_layout_four: css`
     ${cardLayout};
     flex-grow: 1.3;
-    background-color: dodgerblue;
   `,
   card_layout_five: css`
     ${cardLayout};
     flex-grow: 4;
-    background-color: dodgerblue;
   `,
   card_layout_six: css`
     ${cardLayout};
     flex-grow: 1.5;
-    background-color: dodgerblue;
   `,
   card_layout_seven: css`
     ${cardLayout};
     flex-grow: 1.5;
-    background-color: dodgerblue;
   `,
   footer: css`
     flex-grow: 2;
