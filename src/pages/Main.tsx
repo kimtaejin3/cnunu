@@ -2,6 +2,9 @@ import { css } from "@emotion/react";
 
 import { Link } from "react-router-dom";
 
+import plusIcon_black from "@/assets/icons/plus_black.svg";
+import plusIcon_white from "@/assets/icons/plus_white.svg";
+import CardHeader from "@/components/cards/CardHeader";
 import { COLORS } from "@/constants";
 
 const Main = () => {
@@ -14,17 +17,59 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <Link to="/" css={MainCss.card_layout_one}>
-              <div></div>
+            <Link to="/" css={MainCss.card_one}>
+              <CardHeader
+                title="오늘의 학식"
+                titleColor={COLORS.white}
+                iconSrc={plusIcon_white}
+                iconAlt="watch_detail_icon"
+              />
             </Link>
-            <Link to="/" css={MainCss.card_layout_two}></Link>
-            <Link to="/" css={MainCss.card_layout_three}></Link>
-            <Link to="/" css={MainCss.card_layout_four}></Link>
+            <Link to="/" css={MainCss.card_two}>
+              <CardHeader
+                title="순환버스"
+                titleColor={COLORS.black}
+                iconSrc={plusIcon_black}
+                iconAlt="watch_detail_icon"
+              />
+            </Link>
+            <Link to="/" css={MainCss.card_three}>
+              <CardHeader
+                title="맛집 연구소"
+                titleColor={COLORS.black}
+                iconSrc={plusIcon_black}
+                iconAlt="watch_detail_icon"
+              />
+            </Link>
+            <Link to="/" css={MainCss.card_four}>
+              <CardHeader
+                title="인재개발원"
+                titleColor={COLORS.black}
+                iconSrc={plusIcon_black}
+                iconAlt="watch_detail_icon"
+              />
+            </Link>
           </div>
           <div css={MainCss.rightSection}>
-            <Link to="/" css={MainCss.card_layout_five}></Link>
-            <Link to="/" css={MainCss.card_layout_six}></Link>
-            <Link to="/" css={MainCss.card_layout_seven}></Link>
+            <Link to="/" css={MainCss.card_five}>
+              <CardHeader title="도서관 혼잡도" titleColor={COLORS.black} />
+            </Link>
+            <Link to="/" css={MainCss.card_six}>
+              <CardHeader
+                title="학사일정"
+                titleColor={COLORS.black}
+                iconSrc={plusIcon_black}
+                iconAlt="watch_detail_icon"
+              />
+            </Link>
+            <Link to="/" css={MainCss.card_seven}>
+              <CardHeader
+                title="학과알림"
+                titleColor={COLORS.black}
+                iconSrc={plusIcon_black}
+                iconAlt="watch_detail_icon"
+              />
+            </Link>
           </div>
         </main>
         <footer css={MainCss.footer}>
@@ -35,10 +80,11 @@ const Main = () => {
   );
 };
 
-const cardLayout = css`
+const card = css`
   box-shadow: 1px 2px 4px 0px #00000026;
   border-radius: 0.8rem;
   background-color: ${COLORS.white};
+  padding: 1.4rem 0.8rem;
 `;
 
 const MainCss = {
@@ -77,45 +123,47 @@ const MainCss = {
     gap: 1.5rem;
   `,
   leftSection: css`
+    flex-basis: 0;
     flex-grow: 1;
     display: flex;
     gap: 2rem;
     flex-direction: column;
   `,
   rightSection: css`
+    flex-basis: 0;
     flex-grow: 1;
     display: flex;
     gap: 2rem;
     flex-direction: column;
   `,
-  card_layout_one: css`
-    ${cardLayout};
+  card_one: css`
+    ${card};
     flex-grow: 2.3;
     background: ${COLORS.primary700};
   `,
-  card_layout_two: css`
-    ${cardLayout};
+  card_two: css`
+    ${card};
     flex-grow: 0.7;
   `,
-  card_layout_three: css`
-    ${cardLayout};
+  card_three: css`
+    ${card};
     flex-grow: 2.3;
     background: ${COLORS.primary300};
   `,
-  card_layout_four: css`
-    ${cardLayout};
+  card_four: css`
+    ${card};
     flex-grow: 1.3;
   `,
-  card_layout_five: css`
-    ${cardLayout};
+  card_five: css`
+    ${card};
     flex-grow: 4;
   `,
-  card_layout_six: css`
-    ${cardLayout};
+  card_six: css`
+    ${card};
     flex-grow: 1.5;
   `,
-  card_layout_seven: css`
-    ${cardLayout};
+  card_seven: css`
+    ${card};
     flex-grow: 1.5;
   `,
   footer: css`
