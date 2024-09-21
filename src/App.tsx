@@ -13,6 +13,8 @@ function App() {
         <Routes>
           <Route element={<Background color={COLORS.grayscale100} />}>
             <Route path="/" element={<Main />} />
+          </Route>
+          <Route element={<Background color={COLORS.white} />}>
             <Route path="/cafeteria" element={<Cafeteria />} />
           </Route>
         </Routes>
