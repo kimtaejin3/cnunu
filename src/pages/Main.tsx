@@ -138,6 +138,11 @@ const card = css`
   border-radius: 0.8rem;
   background-color: ${COLORS.white};
   padding: 1.4rem 0.8rem;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 `;
 
 const MainCss = {
