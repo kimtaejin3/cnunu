@@ -31,6 +31,12 @@ const baseStyle = css`
     outline: none;
   }
 
+  button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
+
   button:focus {
     outline: none;
   }
