@@ -18,7 +18,7 @@ const Main = () => {
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
           <div css={MainCss.leftSection}>
-            <Link to="/" css={MainCss.card_one}>
+            <Link to="/cafeteria" css={MainCss.card_one}>
               <CardHeader
                 title="오늘의 학식"
                 iconSrc={plusIcon_white}
