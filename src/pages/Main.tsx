@@ -183,20 +183,20 @@ const MainCss = {
     flex-basis: 0;
     padding: 1.5rem 1.5rem 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5vh;
   `,
   leftSection: css`
     flex-basis: 0;
     flex-grow: 1;
     display: flex;
-    gap: 2rem;
+    gap: 1.8vh;
     flex-direction: column;
   `,
   rightSection: css`
     flex-basis: 0;
     flex-grow: 1;
     display: flex;
-    gap: 2rem;
+    gap: 1.8vh;
     flex-direction: column;
   `,
   card_one: css`
@@ -214,13 +214,13 @@ const MainCss = {
   card_three: css`
     ${card};
     flex-basis: 0;
-    flex-grow: 1.4;
+    flex-grow: 1.9;
     background: ${COLORS.primary300};
   `,
   card_four: css`
     ${card};
     flex-basis: 0;
-    flex-grow: 1.3;
+    flex-grow: 1;
   `,
   card_five: css`
     ${card};
@@ -245,7 +245,7 @@ const MainCss = {
   progressBarContainer: css`
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.7vh;
   `,
   footer: css`
     flex-basis: 0;
