@@ -93,8 +93,7 @@ const style = {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${COLORS.white};
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
     gap: 8rem;
 
     h2 {
