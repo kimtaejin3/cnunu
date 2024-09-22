@@ -62,10 +62,9 @@ const baseStyle = css`
   }
 
   @font-face {
-    font-family: "SBAggroB";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    font-family: "SBAggroM";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff")
       format("woff");
-    font-weight: normal;
     font-style: normal;
   }
 `;

@@ -35,7 +35,7 @@ const NavigationBar = ({ title }: Props) => {
 const style = {
   contaier: css`
     background-color: ${COLORS.white};
-    height: 8svh;
+    height: 7svh;
     box-shadow: 0px 2px 4px 0px #00000026;
     display: flex;
     align-items: center;
@@ -43,9 +43,9 @@ const style = {
   `,
 
   title: css`
-    font-family: SBAggroB;
-    font-weight: 400;
-    font-size: 2.7vh;
+    font-family: SBAggroM;
+    // font-weight: 400;
+    font-size: 2.6vh;
     flex-grow: 1;
     text-align: center;
   `,
