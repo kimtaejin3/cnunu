@@ -12,6 +12,8 @@ const MealTimeArea = () => {
     <div
       css={css`
         margin-top: 0;
+        background-color: ${COLORS.white};
+        position: relative;
       `}
     >
       <div css={style.datepickArea}>

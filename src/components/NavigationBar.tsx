@@ -40,6 +40,8 @@ const style = {
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    position: relative;
+    z-index: 1000;
   `,
 
   title: css`

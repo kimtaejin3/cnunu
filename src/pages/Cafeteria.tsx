@@ -6,6 +6,7 @@ const Cafeteria = () => {
     <>
       <NavigationBar title="학식" />
       <MealTimeArea />
+      <div>...</div>
     </>
   );
 };

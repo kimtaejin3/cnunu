@@ -14,7 +14,7 @@ function App() {
           <Route element={<Background color={COLORS.grayscale100} />}>
             <Route path="/" element={<Main />} />
           </Route>
-          <Route element={<Background color={COLORS.white} />}>
+          <Route element={<Background color={COLORS.grayscale200} />}>
             <Route path="/cafeteria" element={<Cafeteria />} />
           </Route>
         </Routes>

@@ -7,6 +7,7 @@ export const COLORS = {
   bg: "#e1e7eb",
   grayscale50: "#FCFCFD",
   grayscale100: "#f1f3f6",
+  grayscale200: "#E0E4EA",
   grayscale300: "#C8CED9",
   grayscale800: "#384252",
   grayscale900: "#191D24",
