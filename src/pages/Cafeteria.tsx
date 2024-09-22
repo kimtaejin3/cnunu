@@ -1,12 +1,15 @@
 import MealTimeArea from "@/components/cafeteria/MealTimeArea";
-import NavigationBar from "@/components/NavigationBar";
+import MenuForCafeteriaOne from "@/components/cafeteria/menu/MenuForCafeteriaOne";
+import NavigationBar from "@/components/common/NavigationBar";
 
 const Cafeteria = () => {
   return (
     <>
       <NavigationBar title="학식" />
       <MealTimeArea />
-      <div>...</div>
+      <div>
+        <MenuForCafeteriaOne />
+      </div>
     </>
   );
 };

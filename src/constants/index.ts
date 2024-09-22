@@ -9,6 +9,7 @@ export const COLORS = {
   grayscale100: "#f1f3f6",
   grayscale200: "#E0E4EA",
   grayscale300: "#C8CED9",
+  grayscale700: "#5B6B86",
   grayscale800: "#384252",
   grayscale900: "#191D24",
   primary150: "#B4F8F5",

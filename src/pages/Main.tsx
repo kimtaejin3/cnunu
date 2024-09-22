@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import plusIcon_black from "@/assets/icons/plus_black.svg";
 import plusIcon_white from "@/assets/icons/plus_white.svg";
 import CardHeader from "@/components/cards/CardHeader";
-import PercentBar from "@/components/PercentBar";
+import PercentBar from "@/components/common/PercentBar";
 import { COLORS } from "@/constants";
 
 const Main = () => {
