@@ -7,7 +7,7 @@ import MenuType from "./MenuType";
 import NEXT_ARROW from "@/assets/icons/next_arrow.svg";
 import { COLORS } from "@/constants";
 
-const MenuForCafeteriaOne = () => {
+const MenuForCafeteriaNeedPopup = () => {
   return (
     <div
       css={css`
@@ -46,4 +46,4 @@ const MenuForCafeteriaOne = () => {
   );
 };
 
-export default MenuForCafeteriaOne;
+export default MenuForCafeteriaNeedPopup;
