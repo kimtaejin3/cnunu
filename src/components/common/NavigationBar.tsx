@@ -50,6 +50,7 @@ const style = {
     font-size: 2.6vh;
     flex-grow: 1;
     text-align: center;
+    margin-bottom: -0.4rem;
   `,
 };
 
