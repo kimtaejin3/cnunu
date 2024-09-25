@@ -14,7 +14,7 @@ const Cafeteria = () => {
         css={css`
           display: flex;
           gap: 1rem;
-          padding: 1rem;
+          padding: 1rem 1rem 10rem;
         `}
       >
         <div
