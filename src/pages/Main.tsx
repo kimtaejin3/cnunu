@@ -125,9 +125,7 @@ const Main = () => {
             </Link>
           </div>
         </main>
-        <footer css={MainCss.footer}>
-          팀 소개 링크 / 제안: 1234@gmail.com
-        </footer>
+        <div css={MainCss.footer}>팀 소개 링크 / 제안: 1234@gmail.com</div>
       </div>
     </div>
   );
