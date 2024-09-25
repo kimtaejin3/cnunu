@@ -9,9 +9,13 @@ import { COLORS } from "@/constants";
 
 type Props = {
   cafeteriaName: string;
+  foodList: {
+    forWorkers: string[];
+    forStudents: string[];
+  };
 };
 
-const MenuForCafeteria = ({ cafeteriaName }: Props) => {
+const MenuForCafeteria = ({ cafeteriaName, foodList }: Props) => {
   return (
     <div
       css={css`
@@ -28,7 +32,7 @@ const MenuForCafeteria = ({ cafeteriaName }: Props) => {
       >
         <div>
           <MenuType typeName="교직원" price="6,000원" />
-          <FoodList list={[]} />
+          <FoodList list={foodList.forWorkers} />
         </div>
         <div
           css={css`
@@ -38,7 +42,7 @@ const MenuForCafeteria = ({ cafeteriaName }: Props) => {
         ></div>
         <div>
           <MenuType typeName="학생" price="4,500원" />
-          <FoodList list={["삼계탕죽", "북어묵조림", "깍두기"]} />
+          <FoodList list={foodList.forStudents} />
         </div>
       </div>
     </div>
