@@ -1,5 +1,6 @@
 import MealTimeArea from "@/components/cafeteria/MealTimeArea";
-import MenuForCafeteriaOne from "@/components/cafeteria/menu/MenuForCafeteriaOne";
+import MenuForCafeteriaNeedPopup from "@/components/cafeteria/menu/MenuForCafeteriaNeedPopup";
+import MenuForCafeteria from "@/components/cafeteria/menu/MenuForCafetria";
 import NavigationBar from "@/components/common/NavigationBar";
 
 const Cafeteria = () => {
@@ -8,7 +9,8 @@ const Cafeteria = () => {
       <NavigationBar title="학식" />
       <MealTimeArea />
       <div>
-        <MenuForCafeteriaOne />
+        <MenuForCafeteriaNeedPopup />
+        <MenuForCafeteria cafeteriaName="2학" />
       </div>
     </>
   );
