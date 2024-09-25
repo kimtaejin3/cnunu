@@ -51,7 +51,7 @@ const Main = () => {
                 iconAlt="watch_detail_icon"
               />
             </Link>
-            <Link to="/" css={MainCss.card_three}>
+            <Link to="/food-recommendation" css={MainCss.card_three}>
               <CardHeader
                 title="맛집 연구소"
                 iconSrc={plusIcon_black}

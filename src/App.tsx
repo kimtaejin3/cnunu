@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { COLORS } from "./constants";
 import Layout from "./layout";
 import Cafeteria from "./pages/Cafeteria";
+import FoodRecommendation from "./pages/FoodRecommendation";
 import Main from "./pages/Main";
 import Background from "./styles/Background";
 
@@ -13,6 +14,10 @@ function App() {
         <Routes>
           <Route element={<Background color={COLORS.grayscale100} />}>
             <Route path="/" element={<Main />} />
+            <Route
+              path="/food-recommendation"
+              element={<FoodRecommendation />}
+            />
           </Route>
           <Route element={<Background color={COLORS.grayscale200} />}>
             <Route path="/cafeteria" element={<Cafeteria />} />
