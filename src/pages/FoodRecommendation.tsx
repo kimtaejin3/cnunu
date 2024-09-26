@@ -1,8 +1,8 @@
 import { css } from "@emotion/react";
 
 import BANNER from "@/assets/static/food_recommendation_banner.svg";
-import BANNER02 from "@/assets/static/food_recommendation_banner02.svg";
 import NavigationBar from "@/components/common/NavigationBar";
+import { COLORS } from "@/constants";
 
 const FoodRecommendation = () => {
   return (
@@ -17,13 +17,26 @@ const FoodRecommendation = () => {
         `}
       >
         <img src={BANNER} alt="food_recommendation_banner" />
-        <img
+        <div
           css={css`
-            margin-top: -170px !important;
+            margin-top: -12rem;
           `}
-          src={BANNER02}
-          alt="food_recommendation_banner"
-        />
+        >
+          <div
+            css={css`
+              border-top: 4rem solid #46dcfa80;
+            `}
+          >
+            ...
+          </div>
+          <div
+            css={css`
+              background: ${COLORS.white};
+            `}
+          >
+            ...
+          </div>
+        </div>
       </div>
     </>
   );

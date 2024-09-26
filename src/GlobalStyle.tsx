@@ -62,6 +62,22 @@ const baseStyle = css`
   }
 
   @font-face {
+    font-family: "SUIT-Bold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SUIT-ExtraBold";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-ExtraBold.woff2")
+      format("woff2");
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: "SBAggroM";
     src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff")
       format("woff");

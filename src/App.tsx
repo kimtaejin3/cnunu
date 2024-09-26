@@ -4,6 +4,7 @@ import { COLORS } from "./constants";
 import Layout from "./layout";
 import Cafeteria from "./pages/Cafeteria";
 import FoodRecommendation from "./pages/FoodRecommendation";
+import FoodReport from "./pages/FoodReport";
 import Main from "./pages/Main";
 import Background from "./styles/Background";
 
@@ -21,6 +22,7 @@ function App() {
           </Route>
           <Route element={<Background color={COLORS.grayscale200} />}>
             <Route path="/cafeteria" element={<Cafeteria />} />
+            <Route path="/food-report" element={<FoodReport />} />
           </Route>
         </Routes>
       </BrowserRouter>

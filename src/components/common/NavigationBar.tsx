@@ -1,5 +1,6 @@
 import { css } from "@emotion/react";
 
+import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 import prevArrow from "@/assets/icons/prev_arrow.svg";
@@ -7,9 +8,10 @@ import { COLORS } from "@/constants";
 
 type Props = {
   title: string;
+  element?: ReactNode;
 };
 
-const NavigationBar = ({ title }: Props) => {
+const NavigationBar = ({ title, element = null }: Props) => {
   return (
     <div css={style.contaier}>
       <Link
@@ -26,8 +28,11 @@ const NavigationBar = ({ title }: Props) => {
         css={css`
           flex-basis: 0;
           flex-grow: 1;
+          text-align: right;
         `}
-      ></div>
+      >
+        {element}
+      </div>
     </div>
   );
 };
