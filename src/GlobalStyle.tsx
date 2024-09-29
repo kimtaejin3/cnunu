@@ -35,6 +35,9 @@ const baseStyle = css`
     background-color: inherit;
     border: none;
     cursor: pointer;
+    color: inherit;
+    font-weight: inherit;
+    font-family: inherit;
   }
 
   button:focus {

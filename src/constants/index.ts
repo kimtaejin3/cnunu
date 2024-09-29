@@ -14,6 +14,7 @@ export const COLORS = {
   grayscale700: "#5B6B86",
   grayscale800: "#384252",
   grayscale900: "#191D24",
+  primary100: "#CBF7FF",
   primary150: "#B4F8F5",
   primary300: "#78F2F5",
   primary350: "#00C6EE",

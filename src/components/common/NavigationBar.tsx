@@ -1,19 +1,20 @@
 import { css } from "@emotion/react";
 
-import { ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 import { Link } from "react-router-dom";
 
 import prevArrow from "@/assets/icons/prev_arrow.svg";
 import { COLORS } from "@/constants";
 
 type Props = {
+  sx?: CSSProperties;
   title: string;
   element?: ReactNode;
 };
 
-const NavigationBar = ({ title, element = null }: Props) => {
+const NavigationBar = ({ sx = {}, title, element = null }: Props) => {
   return (
-    <div css={style.contaier}>
+    <div style={sx} css={style.contaier}>
       <Link
         css={css`
           flex-basis: 0;
