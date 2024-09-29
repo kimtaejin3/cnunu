@@ -18,6 +18,7 @@ const Search = () => {
           display: flex;
           align-items: center;
           gap: 1.2rem;
+          border: 0.1rem solid ${COLORS.grayscale450};
         `}
       >
         <img src={SEARCH} alt="search" />
