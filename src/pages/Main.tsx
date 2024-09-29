@@ -44,7 +44,7 @@ const Main = () => {
                 </ul>
               </div>
             </Link>
-            <Link to="/" css={MainCss.card_two}>
+            <Link to="/bus" css={MainCss.card_two}>
               <CardHeader
                 title="순환버스"
                 iconSrc={plusIcon_black}
@@ -74,7 +74,7 @@ const Main = () => {
                 내 주머니 사정에 딱 맞는 학교 주변 식당/카페
               </p>
             </Link>
-            <Link to="/" css={MainCss.card_four}>
+            <Link to="/hrd-center-notification" css={MainCss.card_four}>
               <CardHeader
                 title="인재개발원"
                 iconSrc={plusIcon_black}
@@ -132,7 +132,7 @@ const Main = () => {
                 오늘 일정 없음
               </p>
             </Link>
-            <Link to="/" css={MainCss.card_seven}>
+            <Link to="/department-notification" css={MainCss.card_seven}>
               <CardHeader
                 title="학과소식"
                 iconSrc={plusIcon_black}
