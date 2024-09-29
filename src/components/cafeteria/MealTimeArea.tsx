@@ -2,6 +2,8 @@ import { css } from "@emotion/react";
 
 import { CSSProperties } from "react";
 
+import ListCategory from "../common/ListCategory";
+
 import LEFT_ARROW from "@/assets/icons/left_arrow.svg";
 
 import RIGHT_ARROW__ACTIVE from "@/assets/icons/right_arrow-active.svg";
@@ -39,7 +41,7 @@ const MealTimeArea = () => {
           <img src={RIGHT_ARROW__ACTIVE} alt="right_arrow" />
         </button>
       </div>
-      <ul
+      {/* <ul
         css={css`
           display: flex;
         `}
@@ -53,7 +55,8 @@ const MealTimeArea = () => {
         <li css={listItemStyle(false)}>
           <button>저녁</button>
         </li>
-      </ul>
+      </ul> */}
+      <ListCategory datas={["아침", "점심", "저녁"]} selectedData="점심" />
     </div>
   );
 };
@@ -72,23 +75,6 @@ const TodayTag = ({ sx }: { sx?: CSSProperties }) => {
     </span>
   );
 };
-
-const listItemStyle = (isActive: boolean) => css`
-  flex-basis: 0;
-  flex-grow: 1;
-  text-align: center;
-  border-bottom: ${isActive
-    ? `2px solid ${COLORS.primary800}`
-    : `2px solid ${COLORS.grayscale300}`};
-  padding-bottom: 1rem;
-  button {
-    font-family: SUIT;
-    color: ${isActive ? COLORS.black : "rgba(0, 0, 0, 0.5)"};
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-  }
-`;
 
 const style = {
   datepickArea: css`
