@@ -134,7 +134,7 @@ const Main = () => {
             </Link>
             <Link to="/" css={MainCss.card_seven}>
               <CardHeader
-                title="학과알림"
+                title="학과소식"
                 iconSrc={plusIcon_black}
                 iconAlt="watch_detail_icon"
               />
