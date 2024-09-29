@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import ListCategory from "@/components/common/ListCategory";
 import NavigationBar from "@/components/common/NavigationBar";
 import Notification from "@/components/common/Notification";
+import Search from "@/components/common/Search";
 import { COLORS } from "@/constants";
 
 const HrdCenterNotification = () => {
@@ -47,6 +48,8 @@ const HrdCenterNotification = () => {
           <button>기타</button>
         </li>
       </ul>
+
+      <Search />
     </div>
   );
 };
