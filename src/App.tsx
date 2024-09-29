@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { COLORS } from "./constants";
 import Layout from "./layout";
+import Bus from "./pages/Bus";
 import Cafeteria from "./pages/Cafeteria";
 import DepartmentNotification from "./pages/DepartmentNotification";
 import FoodRecommendation from "./pages/FoodRecommendation";
@@ -24,6 +25,7 @@ function App() {
               path="/hrd-center-notification"
               element={<HrdCenterNotification />}
             />
+            <Route path="/bus" element={<Bus />} />
           </Route>
           <Route element={<Background color={COLORS.grayscale100} />}>
             <Route path="/" element={<Main />} />
