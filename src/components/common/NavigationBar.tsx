@@ -41,11 +41,11 @@ const NavigationBar = ({ sx = {}, title, element = null }: Props) => {
 const style = {
   contaier: css`
     background-color: ${COLORS.white};
-    height: 7svh;
+    min-height: 7svh;
     box-shadow: 0px 2px 4px 0px #00000026;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 2rem 0.5rem;
     position: relative;
     z-index: 1000;
   `,
