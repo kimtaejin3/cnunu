@@ -6,6 +6,7 @@ import Cafeteria from "./pages/Cafeteria";
 import DepartmentNotification from "./pages/DepartmentNotification";
 import FoodRecommendation from "./pages/FoodRecommendation";
 import FoodReport from "./pages/FoodReport";
+import HrdCenterNotification from "./pages/HrdCenterNotification";
 import Main from "./pages/Main";
 import Background from "./styles/Background";
 
@@ -18,6 +19,10 @@ function App() {
             <Route
               path="/department-notification"
               element={<DepartmentNotification />}
+            />
+            <Route
+              path="/hrd-center-notification"
+              element={<HrdCenterNotification />}
             />
           </Route>
           <Route element={<Background color={COLORS.grayscale100} />}>
