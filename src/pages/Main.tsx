@@ -2,8 +2,9 @@ import { css } from "@emotion/react";
 
 import { Link } from "react-router-dom";
 
-import plusIcon_black from "@/assets/icons/plus_black.svg";
-import plusIcon_white from "@/assets/icons/plus_white.svg";
+import BELL from "@/assets/icons/bell.svg";
+import PLUS_ICON_BLACK from "@/assets/icons/plus_black.svg";
+import PLUS_ICON_WHITE from "@/assets/icons/plus_white.svg";
 import CardHeader from "@/components/cards/CardHeader";
 import PercentBar from "@/components/common/PercentBar";
 import { COLORS } from "@/constants";
@@ -12,8 +13,13 @@ const Main = () => {
   return (
     <div css={MainCss.container}>
       <header css={MainCss.header}>
-        <h1 css={MainCss.title}>CNU:NU</h1>
-        <div css={MainCss.subTitle}>충대 정보 싹 다 모았다</div>
+        <div>
+          <h1 css={MainCss.title}>CNU:NU</h1>
+          <div css={MainCss.subTitle}>충대 정보 싹 다 모았다</div>
+        </div>
+        <button>
+          <img src={BELL} alt="bell" />
+        </button>
       </header>
       <div css={MainCss.contents}>
         <main css={MainCss.main}>
@@ -21,7 +27,7 @@ const Main = () => {
             <Link to="/cafeteria" css={MainCss.card_one}>
               <CardHeader
                 title="오늘의 학식"
-                iconSrc={plusIcon_white}
+                iconSrc={PLUS_ICON_WHITE}
                 iconAlt="watch_detail_icon"
               />
               <div css={MainCss.cardBody}>
@@ -47,14 +53,14 @@ const Main = () => {
             <Link to="/bus" css={MainCss.card_two}>
               <CardHeader
                 title="순환버스"
-                iconSrc={plusIcon_black}
+                iconSrc={PLUS_ICON_WHITE}
                 iconAlt="watch_detail_icon"
               />
             </Link>
             <Link to="/food-recommendation" css={MainCss.card_three}>
               <CardHeader
                 title="맛집 연구소"
-                iconSrc={plusIcon_black}
+                iconSrc={PLUS_ICON_BLACK}
                 iconAlt="watch_detail_icon"
               />
               <p
@@ -77,7 +83,7 @@ const Main = () => {
             <Link to="/hrd-center-notification" css={MainCss.card_four}>
               <CardHeader
                 title="인재개발원"
-                iconSrc={plusIcon_black}
+                iconSrc={PLUS_ICON_BLACK}
                 iconAlt="watch_detail_icon"
               />
             </Link>
@@ -112,7 +118,7 @@ const Main = () => {
             <Link to="/" css={MainCss.card_six}>
               <CardHeader
                 title="학사일정"
-                iconSrc={plusIcon_black}
+                iconSrc={PLUS_ICON_BLACK}
                 iconAlt="watch_detail_icon"
               />
               <p
@@ -135,13 +141,13 @@ const Main = () => {
             <Link to="/department-notification" css={MainCss.card_seven}>
               <CardHeader
                 title="학과소식"
-                iconSrc={plusIcon_black}
+                iconSrc={PLUS_ICON_BLACK}
                 iconAlt="watch_detail_icon"
               />
             </Link>
           </div>
         </main>
-        <div css={MainCss.footer}>팀 소개 링크 / 제안: 1234@gmail.com</div>
+        <div css={MainCss.footer}>팀 소개 링크 제안: 1234@gmail.com</div>
       </div>
     </div>
   );
@@ -166,25 +172,25 @@ const MainCss = {
     height: 100%;
   `,
   header: css`
-    padding: 0.6rem 0;
+    padding: 0.7rem 1.5rem 0;
     flex-grow: 2.3;
     flex-basis: 0;
     box-shadow: 0px 2px 4px 0px #00000026;
     background-color: ${COLORS.white};
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   `,
   title: css`
     color: ${COLORS.grayscale900};
+    font-family: SB-Aggro;
     font-size: 2.4rem;
   `,
   subTitle: css`
     color: ${COLORS.grayscale800};
     font-size: 1.4rem;
     font-weight: 700;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
   `,
   contents: css`
     flex-grow: 30;
