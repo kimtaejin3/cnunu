@@ -53,7 +53,7 @@ const Main = () => {
             <Link to="/bus" css={MainCss.card_two}>
               <CardHeader
                 title="순환버스"
-                iconSrc={PLUS_ICON_WHITE}
+                iconSrc={PLUS_ICON_BLACK}
                 iconAlt="watch_detail_icon"
               />
             </Link>
