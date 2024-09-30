@@ -172,7 +172,7 @@ const MainCss = {
     height: 100%;
   `,
   header: css`
-    padding: 0.7rem 1.5rem 0;
+    padding: 0.7rem 1.5rem 0.5rem;
     flex-grow: 2.3;
     flex-basis: 0;
     box-shadow: 0px 2px 4px 0px #00000026;
