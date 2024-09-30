@@ -7,8 +7,8 @@ const Search = () => {
   return (
     <div
       css={css`
-        padding: 1.2rem; 1.6rem;
-    `}
+        padding: 1.2rem 0;
+      `}
     >
       <div
         css={css`
