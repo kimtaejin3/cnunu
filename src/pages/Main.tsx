@@ -9,12 +9,15 @@ import CardHeader from "@/components/cards/CardHeader";
 import BottomSheet from "@/components/common/BottomSheet";
 import PercentBar from "@/components/common/PercentBar";
 import { COLORS } from "@/constants";
+import useBottomSheet from "@/hooks/useBottomSheet";
 
 const Main = () => {
+  const { isShow, handleClose, handleOpen } = useBottomSheet();
+
   return (
     <>
       <div css={MainCss.container}>
-        <BottomSheet />
+        <BottomSheet isShow={isShow} onClose={handleClose} title="학사일정" />
         <header css={MainCss.header}>
           <div>
             <h1 css={MainCss.title}>CNU:NU</h1>
@@ -118,7 +121,7 @@ const Main = () => {
                   </ul>
                 </div>
               </Link>
-              <Link to="/" css={MainCss.card_six}>
+              <Link to="/" css={MainCss.card_six} onClick={handleOpen}>
                 <CardHeader
                   title="학사일정"
                   iconSrc={PLUS_ICON_BLACK}
@@ -150,7 +153,7 @@ const Main = () => {
               </Link>
             </div>
           </main>
-          <div css={MainCss.footer}>팀 소개 링크 제안: 1234@gmail.com</div>
+          <div css={MainCss.footer}>팀 소개 / 링크 제안: 1234@gmail.com</div>
         </div>
       </div>
     </>

@@ -1,5 +1,6 @@
 import { css, keyframes } from "@emotion/react";
 
+import CLOSE from "@/assets/icons/close.svg";
 import { COLORS } from "@/constants";
 
 const renderAnimationForBottomSheet = keyframes`
@@ -22,7 +23,16 @@ const renderAnimationForShadow = keyframes`
   }
 `;
 
-const BottomSheet = () => {
+type Props = {
+  isShow: boolean;
+  onClose: () => void;
+  title: string;
+};
+
+const BottomSheet = ({ isShow, onClose, title }: Props) => {
+  if (!isShow) {
+    return <></>;
+  }
   return (
     <div
       css={css`
@@ -44,9 +54,27 @@ const BottomSheet = () => {
           border-radius: 1.6rem 1.6rem 0 0;
 
           animation: ${renderAnimationForBottomSheet} 0.5s;
+          z-index: 9999;
         `}
       >
-        ...
+        <div
+          css={css`
+            padding: 1.5rem 2rem;
+            display: flex;
+
+            > * {
+              flex-basis: 0;
+              flex-grow: 1;
+              tex-align: center;
+            }
+          `}
+        >
+          <div></div>
+          <h2>{title}</h2>
+          <button onClick={onClose}>
+            <img src={CLOSE} alt="close" />
+          </button>
+        </div>
       </div>
     </div>
   );
