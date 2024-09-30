@@ -45,7 +45,7 @@ const style = {
     box-shadow: 0px 2px 4px 0px #00000026;
     display: flex;
     align-items: center;
-    padding: 0 2rem 0.5rem;
+    padding: 0.5rem 2rem 0.5rem;
     position: relative;
     z-index: 1000;
   `,
