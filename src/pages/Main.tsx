@@ -41,19 +41,25 @@ const Main = () => {
                     css={css`
                       font-size: 1.4rem;
                       font-weight: 700;
-                      margin-bottom: 1.5rem;
+                      margin-bottom: 1rem;
                     `}
                   >
                     혼잡도
                   </div>
-                  <ul css={MainCss.progressBarContainer}>
-                    <li>
-                      <PercentBar title="1학" progress={80} />
-                    </li>
-                    <li>
-                      <PercentBar title="2학" progress={30} />
-                    </li>
-                  </ul>
+                  <div
+                    css={css`
+                      flex-grow: 1;
+                    `}
+                  >
+                    <ul css={MainCss.progressBarContainer}>
+                      <li>
+                        <PercentBar title="1학" progress={80} />
+                      </li>
+                      <li>
+                        <PercentBar title="2학" progress={30} />
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </Link>
               <Link to="/bus" css={MainCss.card_two}>
@@ -99,7 +105,8 @@ const Main = () => {
                 <CardHeader title="도서관 혼잡도" />
                 <div
                   css={css`
-                    margin-top: 2.5svh;
+                    flex-grow: 1;
+                    margin-top: 1.5rem;
                   `}
                 >
                   <ul css={MainCss.progressBarContainer}>
@@ -233,6 +240,8 @@ const MainCss = {
     flex-grow: 2;
     background: ${COLORS.primary700};
     color: ${COLORS.white};
+    display: flex;
+    flex-direction: column;
   `,
   card_two: css`
     ${card};
@@ -254,6 +263,8 @@ const MainCss = {
     ${card};
     flex-basis: 0;
     flex-grow: 3.6;
+    display: flex;
+    flex-direction: column;
   `,
   card_six: css`
     ${card};
@@ -269,11 +280,16 @@ const MainCss = {
     margin: 1rem 0 0;
     border-top: 0.05rem solid ${COLORS.primary150};
     padding-top: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   `,
   progressBarContainer: css`
     display: flex;
     flex-direction: column;
-    gap: 1.7vh;
+    justify-content: space-around;
+    height: 100%;
+    gap: 1rem;
   `,
   footer: css`
     flex-basis: 0;
