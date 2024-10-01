@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <>
       <div css={MainCss.container}>
-        <BottomSheet isShow={isShow} onClose={handleClose} title="학사일정" />
+        <BottomSheet isShow={isShow} onClose={handleClose} title="학사 일정" />
         <header css={MainCss.header}>
           <div>
             <h1 css={MainCss.title}>CNU:NU</h1>

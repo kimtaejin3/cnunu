@@ -59,18 +59,33 @@ const BottomSheet = ({ isShow, onClose, title }: Props) => {
       >
         <div
           css={css`
-            padding: 1.5rem 2rem;
+            padding: 2rem 2rem;
             display: flex;
 
             > * {
               flex-basis: 0;
               flex-grow: 1;
               tex-align: center;
+
+              display: flex;
+              justify-content: center;
+            }
+
+            button {
+              justify-content: flex-end;
+              align-items: center;
             }
           `}
         >
           <div></div>
-          <h2>{title}</h2>
+          <h2
+            css={css`
+              font-size: 2rem;
+              font-family: SB-aggro;
+            `}
+          >
+            {title}
+          </h2>
           <button onClick={onClose}>
             <img src={CLOSE} alt="close" />
           </button>
