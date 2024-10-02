@@ -1,5 +1,7 @@
 import { css, keyframes } from "@emotion/react";
 
+import { ReactNode } from "react";
+
 import CLOSE from "@/assets/icons/close.svg";
 import { COLORS } from "@/constants";
 
@@ -27,9 +29,10 @@ type Props = {
   isShow: boolean;
   onClose: () => void;
   title: string;
+  children: ReactNode;
 };
 
-const BottomSheet = ({ isShow, onClose, title }: Props) => {
+const BottomSheet = ({ isShow, onClose, title, children }: Props) => {
   if (!isShow) {
     return <></>;
   }
@@ -45,12 +48,13 @@ const BottomSheet = ({ isShow, onClose, title }: Props) => {
     >
       <div
         css={css`
-          background: ${COLORS.white};
+          overflow: hidden;
+          background: ${COLORS.grayscale100};
           position: absolute;
           left: 0;
           right: 0;
           bottom: 0;
-          height: 50vh;
+          height: 60vh;
           border-radius: 1.6rem 1.6rem 0 0;
 
           animation: ${renderAnimationForBottomSheet} 0.5s;
@@ -61,7 +65,7 @@ const BottomSheet = ({ isShow, onClose, title }: Props) => {
           css={css`
             padding: 2rem 2rem;
             display: flex;
-
+            background: ${COLORS.white};
             > * {
               flex-basis: 0;
               flex-grow: 1;
@@ -90,6 +94,7 @@ const BottomSheet = ({ isShow, onClose, title }: Props) => {
             <img src={CLOSE} alt="close" />
           </button>
         </div>
+        <div>{children}</div>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import BELL from "@/assets/icons/bell.svg";
 import PLUS_ICON_BLACK from "@/assets/icons/plus_black.svg";
 import PLUS_ICON_WHITE from "@/assets/icons/plus_white.svg";
+import SchoolSchedule from "@/components/bottomSheet/SchoolSchedule";
 import CardHeader from "@/components/cards/CardHeader";
 import BottomSheet from "@/components/common/BottomSheet";
 import PercentBar from "@/components/common/PercentBar";
@@ -17,7 +18,9 @@ const Main = () => {
   return (
     <>
       <div css={MainCss.container}>
-        <BottomSheet isShow={isShow} onClose={handleClose} title="학사 일정" />
+        <BottomSheet isShow={isShow} onClose={handleClose} title="학사 일정">
+          <SchoolSchedule />
+        </BottomSheet>
         <header css={MainCss.header}>
           <div>
             <h1 css={MainCss.title}>CNU:NU</h1>
