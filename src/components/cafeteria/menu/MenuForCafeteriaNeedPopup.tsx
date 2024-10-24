@@ -15,7 +15,12 @@ const MenuForCafeteriaNeedPopup = () => {
 
   return (
     <div>
-      <BottomSheet isShow={isShow} onClose={handleClose} title="1학 메뉴">
+      <BottomSheet
+        isShow={isShow}
+        onClose={handleClose}
+        title="1학 메뉴"
+        moreGrey
+      >
         <OneCafeteria />
       </BottomSheet>
       <div

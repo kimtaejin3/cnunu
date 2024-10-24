@@ -30,9 +30,10 @@ type Props = {
   onClose: () => void;
   title: string;
   children: ReactNode;
+  moreGrey: boolean;
 };
 
-const BottomSheet = ({ isShow, onClose, title, children }: Props) => {
+const BottomSheet = ({ isShow, onClose, title, children, moreGrey }: Props) => {
   if (!isShow) {
     return <></>;
   }
@@ -48,7 +49,7 @@ const BottomSheet = ({ isShow, onClose, title, children }: Props) => {
       <div
         css={css`
           overflow: hidden;
-          background: ${COLORS.grayscale100};
+          background: ${moreGrey ? "#e0e4ea" : COLORS.grayscale100};
           position: absolute;
           left: 0;
           right: 0;
