@@ -30,10 +30,16 @@ type Props = {
   onClose: () => void;
   title: string;
   children: ReactNode;
-  moreGrey: boolean;
+  moreGrey?: boolean;
 };
 
-const BottomSheet = ({ isShow, onClose, title, children, moreGrey }: Props) => {
+const BottomSheet = ({
+  isShow,
+  onClose,
+  title,
+  children,
+  moreGrey = false,
+}: Props) => {
   if (!isShow) {
     return <></>;
   }
