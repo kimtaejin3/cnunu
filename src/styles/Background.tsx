@@ -20,6 +20,7 @@ const BackgroundCss = (color: string) => ({
   container: css`
     background-color: ${color};
     height: 100%;
+    position: relative;
   `,
 });
 

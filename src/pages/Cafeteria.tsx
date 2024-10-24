@@ -7,11 +7,7 @@ import NavigationBar from "@/components/common/NavigationBar";
 
 const Cafeteria = () => {
   return (
-    <div
-      css={css`
-        position: relative;
-      `}
-    >
+    <div>
       <NavigationBar title="학식" />
       <MealTimeArea />
       <div
