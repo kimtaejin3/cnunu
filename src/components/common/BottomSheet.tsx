@@ -42,7 +42,6 @@ const BottomSheet = ({ isShow, onClose, title, children }: Props) => {
         position: absolute;
         inset: 0;
         background: rgba(0, 0, 0, 0.2);
-
         animation: ${renderAnimationForShadow} 0.5s;
       `}
     >
@@ -54,7 +53,7 @@ const BottomSheet = ({ isShow, onClose, title, children }: Props) => {
           left: 0;
           right: 0;
           bottom: 0;
-          height: 60vh;
+          height: 65vh;
           border-radius: 1.6rem 1.6rem 0 0;
 
           animation: ${renderAnimationForBottomSheet} 0.5s;
