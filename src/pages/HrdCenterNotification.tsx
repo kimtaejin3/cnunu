@@ -1,5 +1,8 @@
 import { css } from "@emotion/react";
 
+import { useEffect } from "react";
+
+import { getActivityNotice } from "@/api";
 import ListCategory from "@/components/common/ListCategory";
 import NavigationBar from "@/components/common/NavigationBar";
 import Notification from "@/components/common/Notification";
@@ -8,6 +11,15 @@ import Search from "@/components/common/Search";
 import { COLORS } from "@/constants";
 
 const HrdCenterNotification = () => {
+  const handleLoadActivityNotice = async () => {
+    const { data } = await getActivityNotice();
+    console.log("hrd data:", data);
+  };
+
+  useEffect(() => {
+    handleLoadActivityNotice();
+  }, []);
+
   return (
     <div>
       <NavigationBar
